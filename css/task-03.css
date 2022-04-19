@@ -1,0 +1,32 @@
+.list {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+.list-item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.14;
+    margin-right: 30px;
+}
+img{
+    display: block;
+    object-fit: cover;
+}
+p{
+    max-width: 320px;
+}
