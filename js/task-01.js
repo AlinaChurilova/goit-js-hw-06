@@ -1,21 +1,19 @@
 
+const allItems = document.querySelectorAll(".item");
+
 const allCategories = document.querySelectorAll("h2").length;
 console.log(`Number of categories: ${allCategories}`);
 
-const categoryNameFirst = document.querySelector("#animals");
 
-const listLenghthFirst = document.querySelectorAll(".item-animals").length;
-console.log(`Category: ${categoryNameFirst.textContent} 
-Elements: ${listLenghthFirst}`);
+allItems.forEach((item) => {
+    
+    const categoryName = item.querySelector("h2").textContent;
+    const listLength = item.querySelectorAll("li").length;
 
-const categoryNameSecond = document.querySelector("#products");
+    
+    return console.log(`Category: ${categoryName }
+    Elements: ${listLength}`);
+ 
+});
 
-const listLenghthSecond = document.querySelectorAll(".item-products").length;
-console.log(`Category: ${categoryNameSecond.textContent} 
-Elements: ${listLenghthSecond}`);
 
-const categoryNameThird = document.querySelector("#technologies");
-
-const listLenghthThird = document.querySelectorAll(".item-technologies").length;
-console.log(`Category: ${categoryNameThird.textContent} 
-Elements: ${listLenghthThird}`);

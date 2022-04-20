@@ -7,44 +7,21 @@ const ingredients = [
   'Condiments',
 ];
 
-const firstIngr = document.createElement("li");
-firstIngr.textContent = "Potatoes";
-firstIngr.classList.add("item");
+const list = document.querySelector("ul#ingredients");
 
-console.log(firstIngr);
+const ingredientsRefs = ingredients.map(ingredient => {
+  const itemRef = document.createElement("li");
+  itemRef.textContent = ingredient;
+  itemRef.classList.add("item");
+  console.log(itemRef);
+  return itemRef;
+
+});
+
+list.append(...ingredientsRefs);
 
 
-const secondIngr = document.createElement("li");
-secondIngr.textContent = "Mushrooms";
-secondIngr.classList.add("item");
-
-console.log(secondIngr);
 
 
-const thirdIngr = document.createElement("li");
-thirdIngr.textContent = "Garlic";
-thirdIngr.classList.add("item");
 
-console.log(thirdIngr);
 
-const fourthIngr = document.createElement("li");
-fourthIngr.textContent = "Tomatos";
-fourthIngr.classList.add("item");
-
-console.log(fourthIngr);
-
-const fifthIngr = document.createElement("li");
-fifthIngr.textContent = "Herbs";
-fifthIngr.classList.add("item");
-
-console.log(fifthIngr);
-
-const sixthIngr = document.createElement("li");
-sixthIngr.textContent = "Condiments";
-sixthIngr.classList.add("item");
-
-console.log(sixthIngr);
-
-const list = document.querySelector("#ingredients");
-
-list.append(fifthIngr, secondIngr, thirdIngr, fourthIngr, fifthIngr, sixthIngr);

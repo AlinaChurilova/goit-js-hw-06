@@ -8,8 +8,11 @@ function сharacters(event) {
    
     event.currentTarget.value.length === Number(dataLengthValue)  ? input.classList.replace("invalid", "valid") :
         input.classList.add("invalid");
-
+    
+    event.currentTarget.value.length !== Number(dataLengthValue) && input.classList.remove("valid");
+    
 }
+
 
 
 
